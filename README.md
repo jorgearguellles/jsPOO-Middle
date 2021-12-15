@@ -47,3 +47,31 @@ console.log("defineProperty:",Object.defineProperty(juan, "pruebaNasa", {
   configurable: false, // Impode que podamos borar propiedades de nuestros objetos, pero si editarlas
 }))
 ```
+## Cómo funciona la memoria en JS
+
+Las variables son referencias a un espacio en memoria.
+Los navegadores web usan dos tipos de memorias: Stack y Heap.
+  - La memoria Stack es muy rápida, pero sin tanto espacio. Aquí se guardan los valores primitivos (booleanos, strings, números…).
+  - La memoria Heap es más lenta, pero permite guardar enormes cantidades de información (son como los tornados: grandes, lentos y desordenados). En esta memoria guardamos los valores de los objetos ({...}).
+
+Entender cómo funciona la memoria en JavaScript no solo será útil para aprender POO, sino también para programación funcional.
+
+## Shallow copy en JavaScript
+
+Shallow Copy se refiere a la forma de crear un nuevo objeto a partir de las propiedades de otro. Esta copia solo se hace a un nivel alto, no se hace con objetos dentro de objetos (nested objects), lo que provoca que la modificación de una de sus propiedades, modifique el objeto principal.
+
+Métodos estatidos de:
+- Object.assing();
+- Object.crate();
+
+## Qué es JSON.stringify & JSON.parse
+
+- **JSON.stringify** es un método estático del prototopo JSON que nos permite convertir objetos en un string. **{} -> ""**
+- **JSON.parse** es un método estático del prototopo JSON que nos permite convertir string en objetos. **"" -> {}**
+- JSON.stringify & JSON.parse: No saben trbajr con métodos al interior de los Objetos.
+
+## La recursividad
+
+**Es cuando una función se llama así misma** y esta funciñon que se llamo así misma cre una nueva ejecución de nuestra ajecución hasta coincidir con el **caso base** que detendra las llamados así misma, y retornara un resultado final.
+
+
