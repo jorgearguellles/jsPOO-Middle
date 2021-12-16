@@ -74,4 +74,27 @@ Métodos estatidos de:
 
 **Es cuando una función se llama así misma** y esta funciñon que se llamo así misma cre una nueva ejecución de nuestra ajecución hasta coincidir con el **caso base** que detendra las llamados así misma, y retornara un resultado final.
 
+Ejemplo:
+
+```js
+let array = [ '👃','👂','🍓','💘','💜','👊','💋','😘','😜','😵', '🙏', 
+'👋','🚽','💃','💎','🚀','🌙','🎁','⛄','🌊', '⛵','🏀','🎱','💰','👶', 
+'👸','🐰','🐷','🐍','🐫', '🔫','👄','🚲','🍉','💛','💚'];
+
+function recursiva(numArray){
+  if(numArray.length != 0){
+    const firstNum = numArray[0];
+    console.log(firstNum);
+    numArray.shift();
+    recursiva(numArray);
+  }
+}
+
+recursiva(array);
+```
+
+## Deep copy con recursividad
+
+
+
 
